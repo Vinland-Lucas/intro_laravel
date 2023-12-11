@@ -3,22 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class MovieController extends Controller
 {
     /**
      * Show movies list.
      */
-    public function showAllMovies(): string
+    public function showAllMovies(): View
     {
-        return 'Liste des produits';
+        return view('movies-list');
     }
 
     /**
      * Show the movie by his id.
      */
-    public function showMovieById(string $id): string
+    public function showMovieById(string $id): View
     {
-        return 'Fiche du film '. $id;
+        return view('movie-details', [
+            'id' => $id
+        ]);
     }
 }

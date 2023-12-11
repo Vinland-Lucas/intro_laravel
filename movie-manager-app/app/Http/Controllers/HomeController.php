@@ -11,8 +11,8 @@ class HomeController extends Controller
     /**
      * Show the homepage content.
      */
-    public function showHomePage(): string
+    public function showHomePage(): View
     {
-        return 'Page d\'accueil';
+        return view('homepage');
     }
 }
