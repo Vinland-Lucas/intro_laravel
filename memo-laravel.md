@@ -11,6 +11,12 @@ Je vais en résenter quelques uns ci-dessous :
 ### app
 Ce répertoire contient tout le code source de notre site (Controllers, Models...)
 
+#### Http
+Ce sous-répertoire du répertoire "app" contient le répertoire de nos Controllers
+
+##### Controllers
+Ce sous-répertoire de "Http" contient les Controllers de notre appli
+
 ### routes
 Ce répertore contient plusieurs fichiers, notamment celui qui nous servira à configurer les routes de notre application
 
