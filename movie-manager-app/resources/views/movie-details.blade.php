@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://cdn.tailwindcss.com"></script>
+@extends('layout.app')
 
-        <title>Movie Details</title>
-    </head>
+@section('title', 'Movie Details')
 
-    <body>
-        <h1>FICHE DU FILM {{ $id }}</h1>
-    </body>
-</html>
+@section('content')
+    <h1>FICHE DU FILM {{ $id }} </h1>
+@stop

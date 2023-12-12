@@ -1,14 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://cdn.tailwindcss.com"></script>
+@extends('layout.app')
 
-        <title>Homepage</title>
-    </head>
+@section('title', 'HomePage')
 
-    <body>
-        <h1>PAGE D'ACCUEIL</h1>
-    </body>
-</html>
+@section('content')
+
+    <div class="h-screen flex justify-center items-center " >
+        <div class="h-32 flex flex-col justify-between items-center">
+            <h1 class="font-mono text-5xl">WELCOME TO MovieMinder</h1>
+
+            <button class="w-48 border-2 rounded">Click here to see our movies library</button>
+        </div>
+
+        <div>
+
+        </div>
+
+    </div>
+
+
+
+@stop
