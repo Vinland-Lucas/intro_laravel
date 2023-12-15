@@ -4,7 +4,12 @@
 
 @section('content')
     <div>
-        <h1>LISTE DES FILMS</h1>
+
+        <div class="flex justify-between items-center">
+            <h1>LISTE DES FILMS</h1>
+            <a href="{{ route('add') }}"><button class="btn btn-secondary">Ajouter un film</button></a>
+        </div>
+
 
         @foreach($movies as $movie)
             <div>
